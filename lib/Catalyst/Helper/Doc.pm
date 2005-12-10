@@ -4,7 +4,7 @@ use warnings;
 use File::Spec;
 use Pod::ProjectDocs;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 sub mk_stuff {
   my ( $class, $helper, $desc, $lang, $charset ) = @_;
@@ -15,9 +15,9 @@ sub mk_stuff {
     title   => $helper->{app},
     outroot => $doc_dir,
     libroot => $lib_dir,
-    desc    => $desc || 'Catalyst based application',
-    charset => 'UTF-8',
-    lang    => 'en',
+    desc    => $desc    || 'Catalyst based application',
+    charset => $charset || 'UTF-8',
+    lang    => $lang    || 'en',
   )->gen;
 }
 

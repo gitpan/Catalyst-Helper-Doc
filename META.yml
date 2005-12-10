@@ -1,10 +1,11 @@
 # http://module-build.sourceforge.net/META-spec.html
 #XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
 name:         Catalyst-Helper-Doc
-version:      0.02
+version:      0.03
 version_from: lib/Catalyst/Helper/Doc.pm
 installdirs:  site
 requires:
+    Catalyst:                      5.3
     Pod::ProjectDocs:              0.22
 
 distribution_type: module
