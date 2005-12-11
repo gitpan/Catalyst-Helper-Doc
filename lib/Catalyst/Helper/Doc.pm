@@ -4,7 +4,7 @@ use warnings;
 use File::Spec;
 use Pod::ProjectDocs;
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 sub mk_stuff {
   my ( $class, $helper, $desc, $lang, $charset ) = @_;
@@ -30,7 +30,7 @@ Catalyst::Helper::Doc - documentation page generator.
 
 =head1 SYNOPSIS
 
-  # excute helper script.
+  # execute helper script.
   script/myapp_create.pl Doc
 
   # you can set description
